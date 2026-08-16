@@ -4,609 +4,629 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#11100e">
+
 <title>Royeraa InteriorCut Pro</title>
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-  scroll-behavior:smooth
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#11100e;
-  color:#f5f1e8;
-  line-height:1.6
+font-family:Arial,Helvetica,sans-serif;
+background:#11100e;
+color:#f5f1e8;
+line-height:1.6;
 }
 
 a{
-  text-decoration:none;
-  color:inherit
+text-decoration:none;
+color:inherit;
 }
 
 :root{
-  --gold:#f2a832;
-  --gold2:#ffc35c;
-  --card:#1b1916;
-  --border:#36312a;
-  --muted:#aaa39a
+--gold:#f2a832;
+--gold2:#ffc35c;
+--card:#1b1916;
+--border:#36312a;
+--muted:#aaa39a;
 }
 
 /* HEADER */
 
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(17,16,14,.96);
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(10px)
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(17,16,14,.96);
+border-bottom:1px solid var(--border);
+backdrop-filter:blur(10px);
 }
 
 .nav{
-  max-width:1150px;
-  margin:auto;
-  padding:14px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px
+max-width:1150px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
 }
 
 .logo-area{
-  display:flex;
-  align-items:center;
-  gap:12px
+display:flex;
+align-items:center;
+gap:12px;
 }
 
 .logo{
-  width:52px;
-  height:52px;
-  border-radius:14px;
-  border:1px solid #8c6a35;
-  background:#191613;
-  display:grid;
-  place-items:center;
-  color:var(--gold);
-  font-size:30px;
-  font-weight:900
+width:52px;
+height:52px;
+border-radius:14px;
+border:1px solid #8c6a35;
+background:#191613;
+display:grid;
+place-items:center;
+color:var(--gold);
+font-size:30px;
+font-weight:900;
 }
 
 .brand-title{
-  font-size:20px;
-  font-weight:800
+font-size:20px;
+font-weight:800;
 }
 
 .brand-sub{
-  font-size:12px;
-  color:var(--muted)
+font-size:12px;
+color:var(--muted);
 }
 
 .nav-links{
-  display:flex;
-  gap:24px
+display:flex;
+gap:24px;
 }
 
 .nav-links a{
-  color:#c9c2b8;
-  font-size:14px
+color:#c9c2b8;
+font-size:14px;
 }
 
 .nav-links a:hover{
-  color:var(--gold)
+color:var(--gold);
 }
 
 .nav-btn,
 .btn-primary{
-  background:var(--gold);
-  color:#16130e;
-  border-color:var(--gold)
+background:var(--gold);
+color:#16130e;
+border-color:var(--gold);
 }
 
 .nav-btn{
-  padding:11px 18px;
-  border-radius:10px;
-  font-weight:800;
-  font-size:14px
+padding:11px 18px;
+border-radius:10px;
+font-weight:800;
+font-size:14px;
 }
 
 /* HERO */
 
 .hero{
-  max-width:1150px;
-  margin:auto;
-  padding:80px 20px 65px;
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:50px;
-  align-items:center
+max-width:1150px;
+margin:auto;
+padding:80px 20px 65px;
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:50px;
+align-items:center;
 }
 
 .badge{
-  display:inline-block;
-  border:1px solid #72562d;
-  color:var(--gold2);
-  padding:7px 12px;
-  border-radius:30px;
-  font-size:12px;
-  font-weight:700;
-  margin-bottom:20px;
-  background:#211b12
+display:inline-block;
+border:1px solid #72562d;
+color:var(--gold2);
+padding:7px 12px;
+border-radius:30px;
+font-size:12px;
+font-weight:700;
+margin-bottom:20px;
+background:#211b12;
 }
 
 h1{
-  font-size:clamp(40px,6vw,68px);
-  line-height:1.04;
-  letter-spacing:-2px;
-  margin-bottom:22px
+font-size:clamp(40px,6vw,68px);
+line-height:1.04;
+letter-spacing:-2px;
+margin-bottom:22px;
 }
 
 h1 span{
-  color:var(--gold)
+color:var(--gold);
 }
 
 .hero p{
-  color:#bdb6ac;
-  font-size:18px;
-  max-width:650px;
-  margin-bottom:28px
+color:#bdb6ac;
+font-size:18px;
+max-width:650px;
+margin-bottom:28px;
 }
 
 .cta-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px
+display:flex;
+flex-wrap:wrap;
+gap:13px;
 }
 
 .btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  padding:15px 23px;
-  border-radius:12px;
-  font-weight:800;
-  font-size:15px;
-  border:1px solid var(--border)
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:15px 23px;
+border-radius:12px;
+font-weight:800;
+font-size:15px;
+border:1px solid var(--border);
+cursor:pointer;
 }
 
 .btn-secondary{
-  background:#1b1916;
-  color:#eee
+background:#1b1916;
+color:#eee;
 }
 
 .hero-note{
-  font-size:12px!important;
-  color:#777!important;
-  margin-top:14px!important;
-  margin-bottom:0!important
+font-size:12px!important;
+color:#777!important;
+margin-top:14px!important;
+margin-bottom:0!important;
 }
 
 /* APP PREVIEW */
 
 .app-preview{
-  background:#191815;
-  border:1px solid #3b352d;
-  border-radius:24px;
-  padding:14px;
-  box-shadow:0 25px 70px rgba(0,0,0,.35)
+background:#191815;
+border:1px solid #3b352d;
+border-radius:24px;
+padding:14px;
+box-shadow:0 25px 70px rgba(0,0,0,.35);
 }
 
 .phone{
-  background:#11100e;
-  border:1px solid #4b4237;
-  border-radius:20px;
-  overflow:hidden
+background:#11100e;
+border:1px solid #4b4237;
+border-radius:20px;
+overflow:hidden;
 }
 
 .phone-top{
-  padding:16px 15px 10px;
-  font-weight:800
+padding:16px 15px 10px;
+font-weight:800;
 }
 
 .tabs{
-  display:flex;
-  gap:5px;
-  padding:0 10px 10px
+display:flex;
+gap:5px;
+padding:0 10px 10px;
 }
 
 .tab{
-  flex:1;
-  text-align:center;
-  padding:10px 4px;
-  border-radius:9px;
-  border:1px solid #38332d;
-  font-size:10px;
-  font-weight:800;
-  color:#999
+flex:1;
+text-align:center;
+padding:10px 4px;
+border-radius:9px;
+border:1px solid #38332d;
+font-size:10px;
+font-weight:800;
+color:#999;
 }
 
 .tab.active{
-  background:var(--gold);
-  color:#16130e;
-  border-color:var(--gold)
+background:var(--gold);
+color:#16130e;
+border-color:var(--gold);
 }
 
 .preview-board{
-  margin:10px;
-  height:270px;
-  border:1px solid #4c453a;
-  border-radius:14px;
-  background:#f2eee5;
-  position:relative;
-  overflow:hidden
+margin:10px;
+height:270px;
+border:1px solid #4c453a;
+border-radius:14px;
+background:#f2eee5;
+position:relative;
+overflow:hidden;
 }
 
 .board{
-  position:absolute;
-  left:10%;
-  top:13%;
-  width:72%;
-  height:62%;
-  background:#eeb257;
-  border:1px solid #8c682f
+position:absolute;
+left:10%;
+top:13%;
+width:72%;
+height:62%;
+background:#eeb257;
+border:1px solid #8c682f;
 }
 
 .part{
-  position:absolute;
-  background:#c98728;
-  border:1px solid #704b1b
+position:absolute;
+background:#c98728;
+border:1px solid #704b1b;
 }
 
 .p1{
-  left:12%;
-  top:16%;
-  width:25%;
-  height:15%
+left:12%;
+top:16%;
+width:25%;
+height:15%;
 }
 
 .p2{
-  left:43%;
-  top:16%;
-  width:37%;
-  height:15%
+left:43%;
+top:16%;
+width:37%;
+height:15%;
 }
 
 .p3{
-  left:12%;
-  top:37%;
-  width:68%;
-  height:12%
+left:12%;
+top:37%;
+width:68%;
+height:12%;
 }
 
 .p4{
-  left:12%;
-  top:56%;
-  width:30%;
-  height:12%
+left:12%;
+top:56%;
+width:30%;
+height:12%;
 }
 
 .p5{
-  left:48%;
-  top:56%;
-  width:32%;
-  height:12%
+left:48%;
+top:56%;
+width:32%;
+height:12%;
 }
 
 .preview-caption{
-  padding:5px 14px 17px;
-  color:#aaa;
-  font-size:12px;
-  text-align:center
+padding:5px 14px 17px;
+color:#aaa;
+font-size:12px;
+text-align:center;
 }
 
 /* SECTIONS */
 
 .section{
-  max-width:1150px;
-  margin:auto;
-  padding:75px 20px;
-  scroll-margin-top:85px
+max-width:1150px;
+margin:auto;
+padding:75px 20px;
+scroll-margin-top:85px;
 }
 
 .section-head{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 42px
+text-align:center;
+max-width:700px;
+margin:0 auto 42px;
 }
 
 .section-head h2{
-  font-size:36px;
-  margin-bottom:10px
+font-size:36px;
+margin-bottom:10px;
 }
 
 .section-head p{
-  color:var(--muted)
+color:var(--muted);
 }
 
 /* FEATURES */
 
 .features{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
 }
 
 .card,
 .show-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:18px;
-  padding:25px
+background:var(--card);
+border:1px solid var(--border);
+border-radius:18px;
+padding:25px;
 }
 
 .icon{
-  width:44px;
-  height:44px;
-  display:grid;
-  place-items:center;
-  border-radius:12px;
-  background:#2a2114;
-  color:var(--gold);
-  font-size:21px;
-  margin-bottom:17px
+width:44px;
+height:44px;
+display:grid;
+place-items:center;
+border-radius:12px;
+background:#2a2114;
+color:var(--gold);
+font-size:21px;
+margin-bottom:17px;
 }
 
 .card h3{
-  font-size:18px;
-  margin-bottom:8px
+font-size:18px;
+margin-bottom:8px;
 }
 
 .card p,
 .show-card p{
-  font-size:14px;
-  color:#a8a097
+font-size:14px;
+color:#a8a097;
 }
 
 /* SHOWCASE */
 
 .showcase{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
 }
 
 .show-card h3{
-  margin-bottom:8px
+margin-bottom:8px;
 }
 
 .mock{
-  height:220px;
-  margin-top:20px;
-  border-radius:14px;
-  border:1px solid #423a30;
-  background:#151411;
-  padding:18px
+height:220px;
+margin-top:20px;
+border-radius:14px;
+border:1px solid #423a30;
+background:#151411;
+padding:18px;
 }
 
 .mock-title{
-  font-weight:800;
-  margin-bottom:14px
+font-weight:800;
+margin-bottom:14px;
 }
 
 .mock-row{
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid #302c27;
-  padding:10px 0;
-  color:#bbb;
-  font-size:13px
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #302c27;
+padding:10px 0;
+color:#bbb;
+font-size:13px;
 }
 
 .mock-row strong{
-  color:var(--gold)
+color:var(--gold);
 }
 
 /* PRICING */
 
 .pricing-wrap{
-  max-width:760px;
-  margin:auto
+max-width:760px;
+margin:auto;
 }
 
 .price-card{
-  background:linear-gradient(145deg,#211b13,#181614);
-  border:1px solid #6c5027;
-  border-radius:24px;
-  padding:38px;
-  text-align:center
+background:linear-gradient(145deg,#211b13,#181614);
+border:1px solid #6c5027;
+border-radius:24px;
+padding:38px;
+text-align:center;
 }
 
 .price-label{
-  color:var(--gold2);
-  font-weight:800
+color:var(--gold2);
+font-weight:800;
 }
 
 .price{
-  font-size:56px;
-  font-weight:900;
-  margin:8px 0
+font-size:56px;
+font-weight:900;
+margin:8px 0;
 }
 
 .price small{
-  font-size:16px;
-  color:#999;
-  font-weight:400
+font-size:16px;
+color:#999;
+font-weight:400;
 }
 
 .price-card ul{
-  list-style:none;
-  text-align:left;
-  max-width:420px;
-  margin:25px auto
+list-style:none;
+text-align:left;
+max-width:420px;
+margin:25px auto;
 }
 
 .price-card li{
-  padding:9px 0;
-  color:#c8c1b7
+padding:9px 0;
+color:#c8c1b7;
 }
 
 .price-card li:before{
-  content:"✓";
-  color:var(--gold);
-  font-weight:900;
-  margin-right:10px
+content:"✓";
+color:var(--gold);
+font-weight:900;
+margin-right:10px;
+}
+
+/* BUY BUTTON */
+
+.buy-button{
+min-width:220px;
+box-shadow:0 8px 25px rgba(242,168,50,.25);
+transition:.2s ease;
+}
+
+.buy-button:hover{
+transform:translateY(-2px);
+box-shadow:0 12px 30px rgba(242,168,50,.35);
 }
 
 /* CTA */
 
 .cta{
-  max-width:1000px;
-  margin:20px auto 80px;
-  padding:55px 25px;
-  text-align:center;
-  background:#1d1914;
-  border:1px solid #493922;
-  border-radius:25px
+max-width:1000px;
+margin:20px auto 80px;
+padding:55px 25px;
+text-align:center;
+background:#1d1914;
+border:1px solid #493922;
+border-radius:25px;
 }
 
 .cta h2{
-  font-size:38px;
-  margin-bottom:12px
+font-size:38px;
+margin-bottom:12px;
 }
 
 .cta p{
-  color:#aaa;
-  margin-bottom:25px
+color:#aaa;
+margin-bottom:25px;
 }
 
 /* FOOTER */
 
 footer{
-  position:relative!important;
-  width:100%;
-  margin-top:70px;
-  padding:45px 20px 30px;
-  background:#0b0a09;
-  border-top:1px solid #302e29
+position:relative!important;
+width:100%;
+margin-top:70px;
+padding:45px 20px 30px;
+background:#0b0a09;
+border-top:1px solid #302e29;
 }
 
 .footer-container{
-  max-width:1150px;
-  margin:auto;
-  text-align:center
+max-width:1150px;
+margin:auto;
+text-align:center;
 }
 
 .footer-brand{
-  font-size:20px;
-  font-weight:800;
-  margin-bottom:7px
+font-size:20px;
+font-weight:800;
+margin-bottom:7px;
 }
 
 .footer-tagline{
-  color:#888;
-  font-size:13px;
-  margin-bottom:22px
+color:#888;
+font-size:13px;
+margin-bottom:22px;
 }
 
 .footer-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:22px;
-  margin:20px 0
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:22px;
+margin:20px 0;
 }
 
 .footer-links a{
-  color:#aaa;
-  font-size:14px
+color:#aaa;
+font-size:14px;
 }
 
 .footer-links a:hover{
-  color:var(--gold)
+color:var(--gold);
 }
 
 .footer-copy{
-  margin-top:25px;
-  padding-top:20px;
-  border-top:1px solid #25231f;
-  color:#666;
-  font-size:13px
+margin-top:25px;
+padding-top:20px;
+border-top:1px solid #25231f;
+color:#666;
+font-size:13px;
 }
 
 /* WHATSAPP */
 
 .wa{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:1100;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:#25D366;
-  color:#fff;
-  font-size:27px;
-  box-shadow:0 8px 25px rgba(0,0,0,.35)
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:1100;
+width:58px;
+height:58px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#25D366;
+color:#fff;
+font-size:27px;
+box-shadow:0 8px 25px rgba(0,0,0,.35);
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-  .hero{
-    grid-template-columns:1fr;
-    padding-top:55px
-  }
+.hero{
+grid-template-columns:1fr;
+padding-top:55px;
+}
 
-  .features{
-    grid-template-columns:repeat(2,1fr)
-  }
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
 }
 
 @media(max-width:760px){
 
-  .nav-links{
-    display:none
-  }
+.nav-links{
+display:none;
+}
 
-  .brand-title{
-    font-size:17px
-  }
+.brand-title{
+font-size:17px;
+}
+
 }
 
 @media(max-width:600px){
 
-  .hero{
-    padding:45px 16px
-  }
-
-  .section{
-    padding:55px 16px
-  }
-
-  .features,
-  .showcase{
-    grid-template-columns:1fr
-  }
-
-  h1{
-    letter-spacing:-1px
-  }
-
-  .hero p{
-    font-size:16px
-  }
-
-  .cta h2{
-    font-size:30px
-  }
-
-  .price{
-    font-size:48px
-  }
-
-  footer{
-    margin-top:45px;
-    padding:35px 15px 25px
-  }
+.hero{
+padding:45px 16px;
 }
+
+.section{
+padding:55px 16px;
+}
+
+.features,
+.showcase{
+grid-template-columns:1fr;
+}
+
+h1{
+letter-spacing:-1px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.cta h2{
+font-size:30px;
+}
+
+.price{
+font-size:48px;
+}
+
+footer{
+margin-top:45px;
+padding:35px 15px 25px;
+}
+
+}
+
 </style>
 </head>
 
@@ -623,19 +643,36 @@ footer{
 <div class="logo">R</div>
 
 <div>
-<div class="brand-title">Royeraa InteriorCut Pro</div>
+
+<div class="brand-title">
+Royeraa InteriorCut Pro
+</div>
+
 <div class="brand-sub">
 Wardrobe Designer • Cut List • Costing
 </div>
+
 </div>
 
 </a>
 
+
 <div class="nav-links">
-<a href="#features">Features</a>
-<a href="#demo">Demo</a>
-<a href="#pricing">Pricing</a>
+
+<a href="#features">
+Features
+</a>
+
+<a href="#demo">
+Demo
+</a>
+
+<a href="#pricing">
+Pricing
+</a>
+
 </div>
+
 
 <a class="nav-btn" href="#contact">
 Get App
@@ -659,36 +696,58 @@ Get App
 BUILT FOR INTERIOR PROFESSIONALS
 </div>
 
+
 <h1>
+
 Design. Cut.<br>
+
 <span>Calculate.</span> Faster.
+
 </h1>
 
+
 <p>
+
 Royeraa InteriorCut Pro helps interior contractors,
 designers and modular factories create wardrobe
 measurements, 2D layouts, cut lists and project
 costing from one simple mobile app.
+
 </p>
+
 
 <div class="cta-row">
 
-<a class="btn btn-primary"
+
+<!-- RAZORPAY BUY BUTTON -->
+
+<a
+class="btn btn-primary buy-button"
 href="https://rzp.io/rzp/9UibPGO"
 target="_blank"
-rel="noopener">
-Get InteriorCut Pro – ₹249
+rel="noopener noreferrer">
+
+🔒 Get InteriorCut Pro – ₹249
+
 </a>
 
-<a class="btn btn-secondary"
+
+<a
+class="btn btn-secondary"
 href="#features">
+
 See Features
+
 </a>
+
 
 </div>
 
+
 <p class="hero-note">
+
 Save time • Reduce cutting mistakes • Improve quotation accuracy
+
 </p>
 
 </div>
@@ -703,6 +762,7 @@ Save time • Reduce cutting mistakes • Improve quotation accuracy
 <div class="phone-top">
 Royeraa InteriorCut Pro
 </div>
+
 
 <div class="tabs">
 
@@ -739,7 +799,9 @@ COST
 
 
 <div class="preview-caption">
+
 Board nesting • Components • Sheet calculation
+
 </div>
 
 </div>
@@ -772,7 +834,9 @@ and modular interior work.
 
 <div class="card">
 
-<div class="icon">📏</div>
+<div class="icon">
+📏
+</div>
 
 <h3>
 Measure
@@ -788,7 +852,9 @@ thickness quickly.
 
 <div class="card">
 
-<div class="icon">▦</div>
+<div class="icon">
+▦
+</div>
 
 <h3>
 2D Design
@@ -804,7 +870,9 @@ partitions and components.
 
 <div class="card">
 
-<div class="icon">✂</div>
+<div class="icon">
+✂
+</div>
 
 <h3>
 Cut List
@@ -820,7 +888,9 @@ nesting from your design.
 
 <div class="card">
 
-<div class="icon">₹</div>
+<div class="icon">
+₹
+</div>
 
 <h3>
 Costing
@@ -878,25 +948,58 @@ before sending them to production.
 BOARD SHEET 01
 </div>
 
-<div class="mock-row">
-<span>Back Panel</span>
-<strong>2100 × 900</strong>
-</div>
 
 <div class="mock-row">
-<span>Side Panel</span>
-<strong>2100 × 560</strong>
+
+<span>
+Back Panel
+</span>
+
+<strong>
+2100 × 900
+</strong>
+
 </div>
 
-<div class="mock-row">
-<span>Shelf</span>
-<strong>864 × 550</strong>
-</div>
 
 <div class="mock-row">
-<span>Total Sheets</span>
-<strong>3</strong>
+
+<span>
+Side Panel
+</span>
+
+<strong>
+2100 × 560
+</strong>
+
 </div>
+
+
+<div class="mock-row">
+
+<span>
+Shelf
+</span>
+
+<strong>
+864 × 550
+</strong>
+
+</div>
+
+
+<div class="mock-row">
+
+<span>
+Total Sheets
+</span>
+
+<strong>
+3
+</strong>
+
+</div>
+
 
 </div>
 
@@ -921,25 +1024,58 @@ and other project costs.
 PROJECT COST
 </div>
 
-<div class="mock-row">
-<span>Board / Sheet</span>
-<strong>₹18,500</strong>
-</div>
 
 <div class="mock-row">
-<span>Laminate</span>
-<strong>₹6,800</strong>
+
+<span>
+Board / Sheet
+</span>
+
+<strong>
+₹18,500
+</strong>
+
 </div>
 
-<div class="mock-row">
-<span>Hardware</span>
-<strong>₹4,200</strong>
-</div>
 
 <div class="mock-row">
-<span>Estimated Total</span>
-<strong>₹34,500</strong>
+
+<span>
+Laminate
+</span>
+
+<strong>
+₹6,800
+</strong>
+
 </div>
+
+
+<div class="mock-row">
+
+<span>
+Hardware
+</span>
+
+<strong>
+₹4,200
+</strong>
+
+</div>
+
+
+<div class="mock-row">
+
+<span>
+Estimated Total
+</span>
+
+<strong>
+₹34,500
+</strong>
+
+</div>
+
 
 </div>
 
@@ -977,9 +1113,15 @@ for your interior business.
 INTERIORCUT PRO
 </div>
 
+
 <div class="price">
+
 ₹249
-<small>one-time*</small>
+
+<small>
+one-time*
+</small>
+
 </div>
 
 
@@ -1012,14 +1154,18 @@ Mobile-friendly interface
 </ul>
 
 
-<a class="btn btn-primary"
+<!-- RAZORPAY BUTTON -->
+
+<a
+class="btn btn-primary buy-button"
 href="https://rzp.io/rzp/9UibPGO"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
 
-Buy Now – ₹249
+🔒 Buy Now – ₹249
 
 </a>
+
 
 </div>
 
@@ -1041,10 +1187,11 @@ Message us on WhatsApp to get InteriorCut Pro.
 </p>
 
 
-<a class="btn btn-primary"
+<a
+class="btn btn-primary"
 href="https://wa.me/917690890896?text=Hi%20Royeraa%2C%20I%20want%20to%20buy%20InteriorCut%20Pro."
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
 
 💬 WhatsApp: 7690890896
 
@@ -1066,8 +1213,11 @@ rel="noopener">
 Royeraa InteriorCut Pro
 </div>
 
+
 <div class="footer-tagline">
+
 Wardrobe Designer • 2D Design • Cut List • Costing
+
 </div>
 
 
@@ -1093,7 +1243,9 @@ Contact
 
 
 <div class="footer-copy">
+
 © 2026 Royeraa InteriorCut Pro. All rights reserved.
+
 </div>
 
 </div>
@@ -1103,10 +1255,11 @@ Contact
 
 <!-- FLOATING WHATSAPP -->
 
-<a class="wa"
+<a
+class="wa"
 href="https://wa.me/917690890896?text=Hi%20Royeraa%2C%20I%20want%20to%20buy%20InteriorCut%20Pro."
 target="_blank"
-rel="noopener"
+rel="noopener noreferrer"
 aria-label="Contact Royeraa on WhatsApp">
 
 ☏
